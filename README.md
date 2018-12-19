@@ -1,6 +1,6 @@
 # ddbopcu
 
-### Install
+## Install
 
 ```
 $ mkdir test_dir && cd test_dir
@@ -8,7 +8,7 @@ $ echo '-e git+https://github.com/a4t/ddbopcu.git@v0.0.2#egg=ddbopcu' > requirem
 $ pip install -r requirements.txt
 ```
 
-### Usage
+## Usage
 
 ```python
 import yaml
@@ -25,7 +25,7 @@ now_cu = ddbopcu.get_cu()
 print(yaml.dump(now_cu, default_flow_style=False))
 ```
 
-### Run
+## Run
 
 ```
 $ python main.py
@@ -56,3 +56,15 @@ tables:
     WriteCapacityUnits: 2
   name: test-table2
 ``` 
+
+## Test
+
+```
+make test
+```
+
+## Format
+
+```
+make fmt
+```
